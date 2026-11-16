@@ -128,7 +128,7 @@ footer{background:#071b2c;color:#9fb4c6;font-size:.8rem;padding:18px 0;text-alig
 <a href="#trayectoria"><span class="es">Trayectoria</span><span class="en">Experience</span></a>
 <a href="#formacion"><span class="es">Formación</span><span class="en">Education</span></a>
 <a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
-<div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" class="on">ES</button><button type="button" data-lang="en">EN</button></div></nav></div></header>
+<div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" class="on">Español</button><button type="button" data-lang="en">English</button></div></nav></div></header>
 <div class="hero"><div class="wrap"><div>
 <div class="kicker"><span class="es">Economista · MEAL, Evaluación e Investigación Aplicada</span><span class="en">Economist · MEAL, Evaluation and Applied Research</span></div>
 <h1>Sandra Colindres</h1>
@@ -252,9 +252,9 @@ footer{background:#071b2c;color:#9fb4c6;font-size:.8rem;padding:18px 0;text-alig
     document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-lang')===l);});
     try{localStorage.setItem('lang',l);}catch(e){}
   }
-  var l='';
+  var l='';var q=(location.search.match(/[?&]lang=(es|en)/)||[])[1];
   try{l=localStorage.getItem('lang')||'';}catch(e){}
-  if(l!=='es'&&l!=='en'){l=(navigator.language||'es').toLowerCase().indexOf('en')===0?'en':'es';}
+  if(q){l=q;}else if(l!=='es'&&l!=='en'){l=(navigator.language||'es').toLowerCase().indexOf('en')===0?'en':'es';}
   set(l);
   document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){set(b.getAttribute('data-lang'));});});
 })();
