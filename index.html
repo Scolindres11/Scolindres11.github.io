@@ -30,12 +30,11 @@ html[lang="en"] .es{display:none !important}
 .lang button{border:0;background:#fff;color:var(--ink);font:600 .75rem/1 var(--sans);padding:7px 10px;cursor:pointer}
 .lang button.on{background:var(--navy);color:#fff}
 /* hero */
-.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero{background:#0b2a43;color:#fff;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:22px 22px;opacity:.7}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:56px;padding-top:76px;padding-bottom:72px;align-items:center}
-.kicker{font-size:.78rem;letter-spacing:2.4px;text-transform:uppercase;color:#c9d6e2}
-.kicker::before{content:"";display:inline-block;width:34px;height:2px;background:var(--gold);vertical-align:middle;margin-right:12px}
-.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,5.4vw,4.1rem);line-height:1.05;margin:18px 0 18px;letter-spacing:-.5px}
+.title-line{font-size:1.05rem;color:#c9d6e2;margin:0 0 18px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,5.4vw,4.1rem);line-height:1.05;margin:0 0 10px;letter-spacing:-.02em}
 .hero .pos{font-size:1.14rem;color:#dbe5ee;max-width:620px}
 .hero .cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-block;padding:12px 22px;border-radius:4px;font-weight:600;font-size:.92rem;border:1px solid rgba(255,255,255,.55);color:#fff;letter-spacing:.2px}
@@ -43,7 +42,7 @@ html[lang="en"] .es{display:none !important}
 .btn.solid{background:var(--gold);border-color:var(--gold);color:#101820}
 @media (hover:hover) and (pointer:fine){.btn.solid:hover{background:#c99a49}}
 .glance{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:26px 26px 22px}
-.glance h3{font-size:.74rem;letter-spacing:2px;text-transform:uppercase;color:#c9d6e2;font-weight:600;margin-bottom:14px}
+.glance h2{font-size:.74rem;letter-spacing:2px;text-transform:uppercase;color:#c9d6e2;font-weight:600;margin-bottom:14px}
 .glance dl div{padding:10px 0;border-top:1px solid rgba(255,255,255,.14)}
 .glance dt{font-size:.72rem;letter-spacing:1.4px;text-transform:uppercase;color:#9fb4c6}
 .glance dd{font-size:.97rem;color:#fff;margin-top:2px}
@@ -54,19 +53,17 @@ html[lang="en"] .es{display:none !important}
 .partners span.o{font-family:var(--serif);font-size:1.02rem;color:var(--navy);font-weight:700;letter-spacing:.2px}
 /* sections */
 section{padding:74px 0 8px}
-.sec-h{display:grid;grid-template-columns:90px 1fr;align-items:baseline;border-top:2px solid var(--navy);padding-top:16px;margin-bottom:30px}
-.sec-h .n{font-family:var(--serif);color:var(--gold);font-size:1.1rem}
+.sec-h{display:grid;grid-template-columns:1fr;align-items:baseline;border-top:2px solid var(--navy);padding-top:16px;margin-bottom:30px}
 .sec-h h2{font-family:var(--serif);font-weight:400;font-size:1.85rem;color:var(--navy);line-height:1.2}
-.sec-h p{grid-column:2;color:var(--muted);margin-top:6px;max-width:720px}
+.sec-h p{grid-column:1;color:var(--muted);margin-top:6px;max-width:720px}
 .profile{display:grid;grid-template-columns:1.7fr 1fr;gap:48px}
 .profile p+p{margin-top:14px}
-.metrics{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.metrics{display:block}
 .metric{background:var(--card);padding:20px 18px}
 .metric b{display:block;font-family:var(--serif);font-size:2.1rem;color:var(--navy);line-height:1}
 .metric span{display:block;margin-top:6px;font-size:.84rem;color:var(--muted);line-height:1.4}
 .areas{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
 .area{background:var(--card);padding:24px 22px}
-.area .k{font-family:var(--serif);color:var(--gold);font-size:.95rem}
 .area h3{font-family:var(--serif);font-weight:700;font-size:1.08rem;color:var(--navy);margin:4px 0 8px;line-height:1.25}
 .area p{font-size:.92rem;color:#3a4756}
 .area .t{margin-top:10px;font-size:.78rem;color:var(--teal);letter-spacing:.3px}
@@ -92,7 +89,7 @@ table.work td:first-child small{display:block;font-weight:400;color:var(--muted)
 .list li{padding:13px 0;border-bottom:1px solid var(--rule)}
 .list b{display:block;font-weight:600}
 .list span{color:var(--muted);font-size:.9rem}
-.contact{background:var(--navy);color:#fff;margin-top:70px}
+.contact{background:#0b2a43;color:#fff;margin-top:70px}
 .contact .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;padding-top:56px;padding-bottom:56px;align-items:center}
 .contact h2{font-family:var(--serif);font-weight:400;font-size:2rem;line-height:1.2}
 .contact p{color:#d3dfeb;margin-top:10px}
@@ -104,7 +101,6 @@ footer{background:#071b2c;color:#9fb4c6;font-size:.8rem;padding:18px 0;text-alig
 @media (max-width:900px){
   .hero .wrap,.profile,.contact .wrap,.two,.tools{grid-template-columns:1fr}
   .areas{grid-template-columns:1fr 1fr}
-  .sec-h{grid-template-columns:50px 1fr}
   table.work thead{display:none}
   table.work tr{display:block;border-top:1px solid var(--rule)}
   table.work td{display:block;border:0;padding:6px 16px;width:auto !important}
@@ -137,6 +133,25 @@ a,.btn,.lang button{touch-action:manipulation}
 .hero .wrap>div:first-child>:nth-child(4){animation-delay:150ms}
 .glance{animation:rise 300ms var(--ease-out) 120ms both}
 }
+.metric{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-top:1px solid var(--rule);background:none}
+.metric b{display:inline;font-size:1.15rem;min-width:4.4ch}
+.metric span{display:inline;margin:0;font-size:.95rem}
+::selection{background:var(--navy);color:#fff}
+input,textarea{caret-color:var(--teal)}
+.cform{grid-column:1/-1;margin-top:8px;padding-top:36px;border-top:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}
+.cform .full{grid-column:1/-1}
+.cform h3{font-family:var(--serif);font-weight:400;font-size:1.4rem}
+.cform label{display:block;font-size:.86rem;color:#d3dfeb;margin-bottom:6px}
+.cform input:not([type=checkbox]),.cform textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid transparent;border-radius:4px;padding:11px 12px}
+.cform textarea{min-height:130px;resize:vertical}
+.cform input:focus-visible,.cform textarea:focus-visible,.cform button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.cform .consent{display:flex;gap:10px;align-items:flex-start}
+.cform .consent input{margin-top:4px;accent-color:var(--gold)}
+.cform .consent label{margin:0;font-size:.92rem}
+.cform button.btn{font:inherit;font-weight:600;cursor:pointer}
+.cform .priv{font-size:.82rem;color:#c9d6e2;max-width:70ch;margin:0}
+.cform .fok{background:rgba(255,255,255,.1);padding:12px 14px;border-radius:4px;margin:0}
+@media (max-width:900px){.cform{grid-template-columns:1fr}}
 </style></head><body>
 <header class="bar"><div class="wrap"><div class="mark">Sandra Colindres</div><nav>
 <a href="#perfil"><span class="es">Perfil</span><span class="en">Profile</span></a>
@@ -147,11 +162,11 @@ a,.btn,.lang button{touch-action:manipulation}
 <a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
 <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" class="on">Español</button><button type="button" data-lang="en">English</button></div></nav></div></header>
 <div class="hero"><div class="wrap"><div>
-<div class="kicker"><span class="es">Economista · MEAL, Evaluación e Investigación Aplicada</span><span class="en">Economist · MEAL, Evaluation and Applied Research</span></div>
 <h1>Sandra Colindres</h1>
+<div class="title-line"><span class="es">Economista · MEAL, Evaluación e Investigación Aplicada</span><span class="en">Economist · MEAL, Evaluation and Applied Research</span></div>
 <p class="pos"><span class="es">Diseño evaluaciones, levantamientos de datos y sistemas de monitoreo con métodos mixtos para programas de cooperación internacional. Más de seis años de trabajo con donantes y organismos multilaterales en Honduras y Centroamérica.</span><span class="en">I design evaluations, data collection and monitoring systems with mixed methods for international cooperation programs. More than six years working with donors and multilateral organizations in Honduras and Central America.</span></p>
 <div class="cta"><a class="btn solid" href="Sandra_Colindres_CV.pdf" download data-goatcounter-click="descarga-cv" data-goatcounter-title="Descarga CV"><span class="es">Descargar CV (PDF)</span><span class="en">Download CV (PDF, Spanish)</span></a><a class="btn" href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a><a class="btn" href="http://www.linkedin.com/in/sandra-colindres" target="_blank" rel="noopener" data-goatcounter-click="click-linkedin" data-goatcounter-title="Click LinkedIn">LinkedIn</a></div>
-</div><aside class="glance"><h3><span class="es">Ficha profesional</span><span class="en">Professional snapshot</span></h3><dl>
+</div><aside class="glance"><h2><span class="es">Ficha profesional</span><span class="en">Professional snapshot</span></h2><dl>
 <div><dt><span class="es">Base</span><span class="en">Based in</span></dt><dd><span class="es">Tegucigalpa, Honduras</span><span class="en">Tegucigalpa, Honduras</span></dd></div>
 <div><dt><span class="es">Cargo actual</span><span class="en">Current role</span></dt><dd><span class="es">Oficial MEAL, GOAL International Honduras</span><span class="en">MEAL Officer, GOAL International Honduras</span></dd></div>
 <div><dt><span class="es">Formación</span><span class="en">Education</span></dt><dd><span class="es">Dos maestrías, Universidad Torcuato Di Tella (Economía Aplicada y Econometría)</span><span class="en">Two master's degrees, Universidad Torcuato Di Tella (Applied Economics and Econometrics)</span></dd></div>
@@ -168,7 +183,7 @@ a,.btn,.lang button{touch-action:manipulation}
 <span class="o">World Vision</span>
 </div></div>
 <section id="perfil"><div class="wrap">
-<div class="sec-h"><div class="n">01</div><h2><span class="es">Perfil</span><span class="en">Profile</span></h2></div>
+<div class="sec-h"><h2><span class="es">Perfil</span><span class="en">Profile</span></h2></div>
 <div class="profile"><div>
 <p><span class="es">Soy economista con más de seis años de experiencia en monitoreo, evaluación y aprendizaje (MEAL) para programas financiados por la cooperación internacional. Actualmente soy Oficial MEAL en GOAL International Honduras, donde diseño y opero sistemas de monitoreo, análisis de datos y reportes para donantes.</span><span class="en">I am an economist with more than six years of experience in monitoring, evaluation and learning (MEAL) for programs funded by international cooperation. I am currently MEAL Officer at GOAL International Honduras, where I design and run monitoring systems, data analysis and donor reporting.</span></p>
 <p><span class="es">Mi enfoque une la econometría con la investigación cualitativa y el trabajo de campo: matrices de resultados, diseño muestral, instrumentos digitales, grupos focales y entrevistas, y análisis de indicadores de seguridad alimentaria y medios de vida. Trabajo con estándares de calidad de datos, consentimiento informado, salvaguarda y enfoque de género e inclusión.</span><span class="en">My approach combines econometrics with qualitative research and fieldwork: results frameworks, sampling design, digital instruments, focus groups and interviews, and analysis of food security and livelihoods indicators. I work to standards of data quality, informed consent, safeguarding and a gender and inclusion lens.</span></p>
@@ -180,17 +195,17 @@ a,.btn,.lang button{touch-action:manipulation}
 <div class="metric"><b>120%</b><span><span class="es">de la meta de encuestas alcanzada, con 95% de cobertura</span><span class="en">of survey target reached, with 95% coverage</span></span></div>
 </div></div></div></section>
 <section id="especialidades"><div class="wrap">
-<div class="sec-h"><div class="n">02</div><h2><span class="es">Áreas de especialidad</span><span class="en">Areas of expertise</span></h2><p><span class="es">Seis líneas de trabajo con las que apoyo a organizaciones de desarrollo.</span><span class="en">Six lines of work through which I support development organizations.</span></p></div>
+<div class="sec-h"><h2><span class="es">Áreas de especialidad</span><span class="en">Areas of expertise</span></h2><p><span class="es">Seis líneas de trabajo con las que apoyo a organizaciones de desarrollo.</span><span class="en">Six lines of work through which I support development organizations.</span></p></div>
 <div class="areas">
-<div class="area"><div class="k">I</div><h3><span class="es">Seguridad alimentaria y medios de vida</span><span class="en">Food security and livelihoods</span></h3><p><span class="es">Análisis de consumo y estrategias de afrontamiento en hogares y diseño de líneas de seguimiento para programas de seguridad alimentaria.</span><span class="en">Analysis of household consumption and coping strategies and design of tracking lines for food security programs.</span></p><div class="t"><span class="es">FCS · rCSI · LCSI · CARI · INSAN</span><span class="en">FCS · rCSI · LCSI · CARI · INSAN</span></div></div>
-<div class="area"><div class="k">II</div><h3><span class="es">Monitoreo, evaluación y aprendizaje</span><span class="en">Monitoring, evaluation and learning</span></h3><p><span class="es">Sistemas MEAL, matrices de resultados, tableros de seguimiento y reportes técnicos para donantes.</span><span class="en">MEAL systems, results frameworks, tracking dashboards and technical reports for donors.</span></p><div class="t"><span class="es">Indicadores · Tableros · Informes</span><span class="en">Indicators · Dashboards · Reports</span></div></div>
-<div class="area"><div class="k">III</div><h3><span class="es">Métodos mixtos e investigación</span><span class="en">Mixed methods and research</span></h3><p><span class="es">Diseño muestral, encuestas digitales, grupos focales, entrevistas y triangulación de hallazgos.</span><span class="en">Sampling design, digital surveys, focus groups, interviews and triangulation of findings.</span></p><div class="t"><span class="es">Muestreo · Campo · Triangulación</span><span class="en">Sampling · Fieldwork · Triangulation</span></div></div>
-<div class="area"><div class="k">IV</div><h3><span class="es">Género, inclusión y protección de datos</span><span class="en">Gender, inclusion and data protection</span></h3><p><span class="es">Enfoque de género e inclusión, consentimiento informado, salvaguarda y mecanismos de retroalimentación comunitaria.</span><span class="en">Gender and inclusion lens, informed consent, safeguarding and community feedback mechanisms.</span></p><div class="t"><span class="es">Ética · Salvaguarda · Rendición de cuentas</span><span class="en">Ethics · Safeguarding · Accountability</span></div></div>
-<div class="area"><div class="k">V</div><h3><span class="es">Econometría y análisis de datos</span><span class="en">Econometrics and data analysis</span></h3><p><span class="es">Evaluación de impacto, modelado estadístico y análisis con R, Stata y Python, y visualización en Power BI.</span><span class="en">Impact evaluation, statistical modeling and analysis with R, Stata and Python, and visualization in Power BI.</span></p><div class="t"><span class="es">R · Stata · Python · Power BI</span><span class="en">R · Stata · Python · Power BI</span></div></div>
-<div class="area"><div class="k">VI</div><h3><span class="es">Desarrollo productivo y clima</span><span class="en">Productive development and climate</span></h3><p><span class="es">Cadenas de valor agrícolas, inclusión productiva y acción climática en contextos rurales.</span><span class="en">Agricultural value chains, productive inclusion and climate action in rural contexts.</span></p><div class="t"><span class="es">Agricultura · Clima · Cadenas de valor</span><span class="en">Agriculture · Climate · Value chains</span></div></div>
+<div class="area"><h3><span class="es">Seguridad alimentaria y medios de vida</span><span class="en">Food security and livelihoods</span></h3><p><span class="es">Análisis de consumo y estrategias de afrontamiento en hogares y diseño de líneas de seguimiento para programas de seguridad alimentaria.</span><span class="en">Analysis of household consumption and coping strategies and design of tracking lines for food security programs.</span></p><div class="t"><span class="es">FCS · rCSI · LCSI · CARI · INSAN</span><span class="en">FCS · rCSI · LCSI · CARI · INSAN</span></div></div>
+<div class="area"><h3><span class="es">Monitoreo, evaluación y aprendizaje</span><span class="en">Monitoring, evaluation and learning</span></h3><p><span class="es">Sistemas MEAL, matrices de resultados, tableros de seguimiento y reportes técnicos para donantes.</span><span class="en">MEAL systems, results frameworks, tracking dashboards and technical reports for donors.</span></p><div class="t"><span class="es">Indicadores · Tableros · Informes</span><span class="en">Indicators · Dashboards · Reports</span></div></div>
+<div class="area"><h3><span class="es">Métodos mixtos e investigación</span><span class="en">Mixed methods and research</span></h3><p><span class="es">Diseño muestral, encuestas digitales, grupos focales, entrevistas y triangulación de hallazgos.</span><span class="en">Sampling design, digital surveys, focus groups, interviews and triangulation of findings.</span></p><div class="t"><span class="es">Muestreo · Campo · Triangulación</span><span class="en">Sampling · Fieldwork · Triangulation</span></div></div>
+<div class="area"><h3><span class="es">Género, inclusión y protección de datos</span><span class="en">Gender, inclusion and data protection</span></h3><p><span class="es">Enfoque de género e inclusión, consentimiento informado, salvaguarda y mecanismos de retroalimentación comunitaria.</span><span class="en">Gender and inclusion lens, informed consent, safeguarding and community feedback mechanisms.</span></p><div class="t"><span class="es">Ética · Salvaguarda · Rendición de cuentas</span><span class="en">Ethics · Safeguarding · Accountability</span></div></div>
+<div class="area"><h3><span class="es">Econometría y análisis de datos</span><span class="en">Econometrics and data analysis</span></h3><p><span class="es">Evaluación de impacto, modelado estadístico y análisis con R, Stata y Python, y visualización en Power BI.</span><span class="en">Impact evaluation, statistical modeling and analysis with R, Stata and Python, and visualization in Power BI.</span></p><div class="t"><span class="es">R · Stata · Python · Power BI</span><span class="en">R · Stata · Python · Power BI</span></div></div>
+<div class="area"><h3><span class="es">Desarrollo productivo y clima</span><span class="en">Productive development and climate</span></h3><p><span class="es">Cadenas de valor agrícolas, inclusión productiva y acción climática en contextos rurales.</span><span class="en">Agricultural value chains, productive inclusion and climate action in rural contexts.</span></p><div class="t"><span class="es">Agricultura · Clima · Cadenas de valor</span><span class="en">Agriculture · Climate · Value chains</span></div></div>
 </div></div></section>
 <section id="trabajo"><div class="wrap">
-<div class="sec-h"><div class="n">03</div><h2><span class="es">Trabajo seleccionado</span><span class="en">Selected work</span></h2><p><span class="es">Programas y estudios representativos. Descripciones a nivel de programa, sin datos confidenciales.</span><span class="en">Representative programs and studies. Program-level descriptions, no confidential data.</span></p></div>
+<div class="sec-h"><h2><span class="es">Trabajo seleccionado</span><span class="en">Selected work</span></h2><p><span class="es">Programas y estudios representativos. Descripciones a nivel de programa, sin datos confidenciales.</span><span class="en">Representative programs and studies. Program-level descriptions, no confidential data.</span></p></div>
 <table class="work"><thead><tr><th><span class="es">Programa / estudio</span><span class="en">Program / study</span></th><th><span class="es">Rol y método</span><span class="en">Role and method</span></th><th><span class="es">Resultado</span><span class="en">Result</span></th></tr></thead><tbody>
 <tr><td>THRIVE 2030<small><span class="es">World Vision Guatemala y Honduras · ERAK Consultores</span><span class="en">World Vision Guatemala and Honduras · ERAK Consultores</span></small></td><td><span class="es">Coordinación regional entre equipos de dos países, seguimiento de indicadores y entrega de productos técnicos.</span><span class="en">Regional coordination across two countries' teams, indicator tracking and delivery of technical products.</span></td><td><span class="es">1,500 encuestas bajo un mismo estándar técnico en Honduras y Guatemala; apoyo a consultorías en El Salvador.</span><span class="en">1,500 surveys under a single technical standard in Honduras and Guatemala; support to consultancies in El Salvador.</span></td></tr>
 <tr><td>COMRURAL III<small><span class="es">Banco Mundial / GAFSP · GOAL · Moskitia, Honduras</span><span class="en">World Bank / GAFSP · GOAL · Moskitia, Honduras</span></small></td><td><span class="es">Diseño de instrumentos digitales de caracterización y de negocios agrocosteros en KoboToolbox, con lógica de consentimiento y controles de calidad.</span><span class="en">Design of digital characterization and agribusiness instruments in KoboToolbox, with consent logic and quality controls.</span></td><td><span class="es">Suite de formularios que cubre 13 cadenas de valor para el levantamiento de datos del proyecto.</span><span class="en">Form suite covering 13 value chains for the project's data collection.</span></td></tr>
@@ -200,7 +215,7 @@ a,.btn,.lang button{touch-action:manipulation}
 <tr><td><span class="es">Mecanismo de retroalimentación (CFM)</span><span class="en">Community feedback mechanism (CFM)</span><small><span class="es">BID · GOAL Honduras</span><span class="en">IDB · GOAL Honduras</span></small></td><td><span class="es">Reporte operativo del mecanismo de quejas y retroalimentación de un programa de transferencias en efectivo.</span><span class="en">Operational report on the complaints and feedback mechanism of a cash transfer program.</span></td><td><span class="es">Informe con 539 familias en tres fechas de dispersión y 5 recomendaciones validadas.</span><span class="en">Report covering 539 families across three dispersal dates and 5 validated recommendations.</span></td></tr>
 </tbody></table></div></section>
 <section id="metodologia"><div class="wrap">
-<div class="sec-h"><div class="n">04</div><h2><span class="es">Metodología y herramientas</span><span class="en">Methods and tools</span></h2></div>
+<div class="sec-h"><h2><span class="es">Metodología y herramientas</span><span class="en">Methods and tools</span></h2></div>
 <div class="tools"><div><h3><span class="es">Métodos</span><span class="en">Methods</span></h3><ul>
 <li><span class="es">Métodos mixtos y triangulación</span><span class="en">Mixed methods and triangulation</span></li>
 <li><span class="es">Diseño muestral y trabajo de campo</span><span class="en">Sampling design and fieldwork</span></li>
@@ -216,7 +231,7 @@ a,.btn,.lang button{touch-action:manipulation}
 <li><span class="es">Excel avanzado</span><span class="en">Advanced Excel</span></li>
 </ul></div></div></div></section>
 <section id="trayectoria"><div class="wrap">
-<div class="sec-h"><div class="n">05</div><h2><span class="es">Trayectoria profesional</span><span class="en">Professional experience</span></h2></div>
+<div class="sec-h"><h2><span class="es">Trayectoria profesional</span><span class="en">Professional experience</span></h2></div>
 <div class="tl">
 <div class="role"><div class="when"><span class="es">Noviembre 2025 – actualidad</span><span class="en">November 2025 – present</span></div><h3><span class="es">Oficial MEAL · GOAL International Honduras</span><span class="en">MEAL Officer · GOAL International Honduras</span></h3><ul>
 <li><span class="es">Diseño e implementación del sistema de monitoreo y evaluación y reportes periódicos para gerencia y donantes.</span><span class="en">Design and implementation of the monitoring and evaluation system and periodic reports for management and donors.</span></li>
@@ -240,7 +255,7 @@ a,.btn,.lang button{touch-action:manipulation}
 </ul></div>
 </div></div></section>
 <section id="formacion"><div class="wrap">
-<div class="sec-h"><div class="n">06</div><h2><span class="es">Formación e investigación</span><span class="en">Education and research</span></h2></div>
+<div class="sec-h"><h2><span class="es">Formación e investigación</span><span class="en">Education and research</span></h2></div>
 <div class="two"><div><h3><span class="es">Formación</span><span class="en">Education</span></h3><ul class="list">
 <li><b><span class="es">Maestría en Economía Aplicada</span><span class="en">Master's in Applied Economics</span></b><span>Universidad Torcuato Di Tella · 2024–2026</span></li>
 <li><b><span class="es">Maestría en Econometría</span><span class="en">Master's in Econometrics</span></b><span>Universidad Torcuato Di Tella · 2023–2026</span></li>
@@ -257,7 +272,21 @@ a,.btn,.lang button{touch-action:manipulation}
 <li><b><span class="es">Índices de Competitividad Regional · UNAH-IIES, COHEP, CNI, USAID</span><span class="en">Regional Competitiveness Indexes · UNAH-IIES, COHEP, CNI, USAID</span></b><span><a href="https://iies.unah.edu.hn/assets/IIES/paginas/icrhn/ICR-VALLE-DE-SULA.pdf" target="_blank" rel="noopener">Valle de Sula</a> · <a href="https://iies.unah.edu.hn/assets/IIES/paginas/icrhn/ICR-GOLFO-DE-FONSECA.pdf" target="_blank" rel="noopener">Golfo de Fonseca</a> · <a href="https://iies.unah.edu.hn/assets/IIES/paginas/icrhn/ICR-CENTRO-COMAYAGUA.pdf" target="_blank" rel="noopener"><span class="es">Centro (Comayagua)</span><span class="en">Center (Comayagua)</span></a></span></li>
 </ul></div></div><p style="margin-top:30px;color:var(--muted);font-size:.93rem"><span class="es">Títulos y certificados disponibles a solicitud: <a href="mailto:scolindres11@outlook.com">scolindres11@outlook.com</a> · <a href="tel:+50489573963">+504 8957 3963</a></span><span class="en">Degrees and certificates available upon request: <a href="mailto:scolindres11@outlook.com">scolindres11@outlook.com</a> · <a href="tel:+50489573963">+504 8957 3963</a></span></p></div></section>
 <div class="contact" id="contacto"><div class="wrap"><div><h2><span class="es">Conversemos sobre su próximo estudio o programa</span><span class="en">Let's talk about your next study or program</span></h2><p><span class="es">Disponible para consultorías, evaluaciones y puestos de MEAL e investigación con organismos multilaterales, agencias de cooperación y ONG.</span><span class="en">Available for consultancies, evaluations and MEAL and research roles with multilateral organizations, cooperation agencies and NGOs.</span></p><div class="row"><a href="mailto:scolindres11@outlook.com">scolindres11@outlook.com</a> · 504 8957 3963</div></div>
-<div class="cta"><a class="btn solid" href="Sandra_Colindres_CV.pdf" download data-goatcounter-click="descarga-cv-contacto" data-goatcounter-title="Descarga CV (contacto)"><span class="es">Descargar CV (PDF)</span><span class="en">Download CV (PDF, Spanish)</span></a><a class="btn" href="mailto:scolindres11@outlook.com" data-goatcounter-click="click-correo" data-goatcounter-title="Click correo"><span class="es">Enviar correo</span><span class="en">Send email</span></a><a class="btn" href="http://www.linkedin.com/in/sandra-colindres" target="_blank" rel="noopener">LinkedIn</a></div></div></div>
+<div class="cta"><a class="btn solid" href="Sandra_Colindres_CV.pdf" download data-goatcounter-click="descarga-cv-contacto" data-goatcounter-title="Descarga CV (contacto)"><span class="es">Descargar CV (PDF)</span><span class="en">Download CV (PDF, Spanish)</span></a><a class="btn" href="mailto:scolindres11@outlook.com" data-goatcounter-click="click-correo" data-goatcounter-title="Click correo"><span class="es">Enviar correo</span><span class="en">Send email</span></a><a class="btn" href="http://www.linkedin.com/in/sandra-colindres" target="_blank" rel="noopener">LinkedIn</a></div>
+<form class="cform" action="https://formsubmit.co/scolindres11@outlook.com" method="POST" id="escribeme">
+<h3 class="full"><span class="es">Escríbeme</span><span class="en">Write to me</span></h3>
+<input type="hidden" name="_subject" value="Mensaje desde el sitio web"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://scolindres11.github.io/?enviado=1#contacto"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<p id="fok" class="full fok" role="status" hidden><span class="es">Gracias, recibí tu mensaje y te responderé pronto.</span><span class="en">Thank you, I received your message and will reply soon.</span></p>
+<div><label for="f-nombre"><span class="es">Nombre</span><span class="en">First name</span></label><input id="f-nombre" name="Nombre" type="text" required autocomplete="given-name"></div>
+<div><label for="f-apellido"><span class="es">Apellido</span><span class="en">Last name</span></label><input id="f-apellido" name="Apellido" type="text" required autocomplete="family-name"></div>
+<div><label for="f-correo"><span class="es">Correo electrónico</span><span class="en">Email</span></label><input id="f-correo" name="email" type="email" required autocomplete="email"></div>
+<div><label for="f-tel"><span class="es">Teléfono</span><span class="en">Phone</span></label><input id="f-tel" name="Teléfono" type="tel" inputmode="tel" autocomplete="tel"></div>
+<div class="full"><label for="f-pais"><span class="es">País</span><span class="en">Country</span></label><input id="f-pais" name="País" type="text" required autocomplete="country-name"></div>
+<div class="full"><label for="f-msg"><span class="es">Mensaje</span><span class="en">Message</span></label><textarea id="f-msg" name="Mensaje" required rows="5"></textarea></div>
+<div class="full consent"><input id="f-ok" name="Acepta aviso de privacidad" type="checkbox" value="Sí" required><label for="f-ok"><span class="es">Acepto que uso estos datos para responder mi mensaje. <a href="#privacidad">Aviso de privacidad</a></span><span class="en">I agree that my details are used to reply to my message. <a href="#privacidad">Privacy notice</a></span></label></div>
+<div class="full"><button type="submit" class="btn solid"><span class="es">Enviar mensaje</span><span class="en">Send message</span></button></div>
+<p id="privacidad" class="full priv"><span class="es">Aviso de privacidad: los datos de este formulario se usan solo para responderte. El mensaje llega a mi correo mediante un servicio de reenvío de formularios (FormSubmit). No uso cookies publicitarias ni vendo datos. Para que borre tu mensaje, escribe a scolindres11@outlook.com.</span><span class="en">Privacy notice: the details in this form are used only to reply to you. The message reaches my inbox through a form-forwarding service (FormSubmit). I use no advertising cookies and do not sell data. To have your message deleted, write to scolindres11@outlook.com.</span></p>
+</form></div></div>
 <footer>© 2026 Sandra Colindres · Tegucigalpa, Honduras</footer>
 <script>
 (function(){
@@ -276,6 +305,7 @@ a,.btn,.lang button{touch-action:manipulation}
   document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){set(b.getAttribute('data-lang'));});});
 })();
 </script>
+<script>if(/[?&]enviado=1/.test(location.search)){var o=document.getElementById("fok");if(o)o.hidden=false;}</script>
 <!-- CONTADOR DE VISITAS / VISIT COUNTER (GoatCounter, sin cookies). Reemplaza TU-CODIGO y quita los comentarios:
 <script data-goatcounter="https://TU-CODIGO.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 -->
